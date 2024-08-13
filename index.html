@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 saatte ders</title>
+</head>
+<body style="background-color: bisque;" >
+
+    <h3>Merhaba Html</h3>
+    <br>
+    <hr>
+    <!------------ Komple HTML Tekrar------------->    
+     <p>
+        yeni bilgi
+     </p>
+     <hr>
+     <a target="_blank" title="youtuba gider" href="https://www.youtube.com">Youtube</a>
+     <hr>
+     <img src="123/000.jpg" height="250px" alt="Çikolata küpleri" title="çikolata küpleri">
+     <hr>
+     <audio src="muzik/123.mp3" controls autoplay muted loop >Bakara suresi</audio>
+     <hr>
+     <video src="video.mp4" width="500px" controls autoplay muted loop >Balıklar</video>
+     <hr>
+     <p>bu normal bir yazı</p>
+     <i> <p>bu normal bir yazı</p></i>
+     <b> <p>bu normal bir yazı</p></b>
+     <small><p>bu normal bir yazı</p> </small>
+     <big><p>bu normal bir yazı</p></big>
+     <sub><p>bu normal bir yazı</p></sub>
+     <sup><p>bu normal bir yazı</p></sup>
+     <ins><p>bu normal bir yazı</p></ins>
+     <del><p>bu normal bir yazı</p></del>
+     <hr>
+     <h3>Sıralı Liste</h3>
+
+     <ul>
+        <li>Süt</li>
+        <li>Tavuk</li>
+        <li>Kahvaltılık
+            <ul>
+                <li>Zeytin</li>
+                <li>Peynir</li>
+                <li>Domates</li>
+            </ul>
+        </li>
+     </ul>
+
+     <h3>Sırasız Liste</h3>
+
+     <ol type="A">
+        <li>Yağı koy</li>
+        <li>Tavayı ısıt</li>
+        <li>Yumurtayı kır</li>
+     </ol>
+
+     <h3>Açıklama Listesi</h3>
+     <dl>
+        <dt>HTML</dt>
+        <dd>Wep sitesinin elemanlarını göstermeye yarar</dd>
+        <dt>CSS</dt>
+        <dd>Wep sitesinin görünümünü göstermeye yarar</dd>
+
+     </dl>
+     <hr>
+     <h2>Açılış Saatleri</h2>
+
+     <table bgcolor="red" width="560">
+        <tr bgcolor = "grey">
+
+            <th width="80">Pazartesi</th>
+            <th width="80">Salı</th>
+            <th width="80">Çarşamba</th>
+            <th width="80">Perşembe</th>
+            <th width="80">Cuma</th>
+            <th width="80">Cumartesi</th>
+            <th width="80">Pazar</th>
+        </tr>
+        <tr align="center"
+            bgcolor="blue">
+            <td>8-5</td>
+            <td>8-5</td>
+            <td>8-5</td>
+            <td>Kapalı</td>
+            <td>Kapalı</td>
+            <td>9-5</td>
+            <td>9-5</td>
+        </tr>
+     </table>
+     <hr>
+
+     <h1 style="background-color: brown;">Merhaba HTML</h1>
+     <h1 style="color: azure;">Merhaba HTML</h1>
+     <h1 style="color: rgb=(163, 20, 219);">Merhaba HTML</h1>
+     <!--ikinci ve üçüçüncü h1 renkleri color picker ile yapıldı-->
+     <p style="background-color: aqua; color: blue;">Lorem ipsum dolor sit amet.</p>
+     <hr>
+
+     <!---------span ve div etiketleri------------->
+
+     <div style="background-color: red;">bu bir div etiketidir </div>
+     <span style="background-color: blue;">bu bir span etiketidir</span>
+     <hr>
+     <!--meta etiketleri------------->
+       <h3>Meta Etiketleri</h3>
+     <ol>
+        <li>        en üstte yazılır.site hakkında bilgi için yapılır.
+        </li>
+     </ol>
+     <hr>
+     <!--iframa etiketi----sayfada internet adresi koymak için yapılır----->
+
+     <iframe src="https://www.wikipedia.org/" frameborder="3" width="350px" height="350px"></iframe>
+    
+     <hr>
+     <!--buton etiketleri-->
+     
+        <button onclick="Tıkla()" style="background-color: aqua; 
+        color: brown;
+        border-radius: 10px;">Tıkla    <!--kenarlık ovallık ayarı-->
+    </button>
+
+    <p id="yazı" >Butona bas!</p>
+    <script>
+        function Tıkla() {
+            document.getElementById("yazı").innerHTML="Butona Bastınız"
+        }
+    </script>
+<div style="background-color: aqua ;color: blue;"action="">
+    <hr>
+    <!--------form etiketleri---------->
+    <h3 >Sigorta Şirketine Wep Sayfası</h3>
+    
+
+    <form >
+
+        <label for="isim">Ad</label>
+        <input type="text" name="isim" id="isim"
+        placeholder="Ethem" required>
+<br><br>
+        <label for="Soyad">Soyad</label>
+        <input type="text" name="Soyad" id="soyad"
+        placeholder="Güner" required>
+
+<br><br>
+    
+     <label for="Şifre">Şifre</label>
+     <input type="password" name="Şifre" id="Şifre"
+     placeholder="*****" maxlength="8">
+
+     <br><br>
+
+     
+     <label for="E-posta">E-posta</label>
+     <input type="email" name="E-posta" id="E-posta"
+     placeholder="ex@gmail.com">
+
+     <br><br>
+
+     
+     <label for="Telefon">Telefon</label>
+     <input type="tel" name="Telefon" id="Telefon"
+     placeholder="(555)-555-55-55">
+
+     <br><br>
+
+     
+     <label for="Tarih">Doğum Günü</label>
+     <input type="date" name="Tarih" id="Tarih"
+     placeholder="12">
+
+     <br><br>
+
+     <label for="Kardeş">Kardeş Sayısı</label>
+     <input type="number" name="kardeş" id="Kardeş" 
+     min="0" max="15">
+
+     <br><br>
+
+    <label for="Cinsiyet">Cinsiyet:</label>
+    <label for="">Kadın</label>
+    <input type="radio" name="Cinsiyet" id="Kadın" value="Kadın">
+    <label for="">Erkek</label>
+    <input type="radio" name="Cinsiyet" id="Erkek" value="Erkek">
+     
+    <br><br>    
+        
+<select name="" id="">
+    <option value="SSK">SSK</option>
+    <option value="BAĞKUR">BAĞKUR</option>
+    <option value="EMEKLİ SANDIĞI">EMEKLİ SANDIĞI</option>
+
+</select> 
+
+<br><br>
+
+<label for="">Aktif OLARAK ÇALIŞIYOR..."></IYOR></label>
+<input type="checkbox">
+
+<br><br>
+
+<textarea name="Açıklama" id="" cols="15" rows="15"></textarea>
+
+<br><br>
+
+<input name="dosya seç" type="file" accept=".pdf">
+<br><br>
+
+    
+    <input type="reset" name="sıfırla">
+    <input type="submit">
+        
+    </form>
+
+
+</div>
+
+     
+     
+     
+
+</body>
+</html>
